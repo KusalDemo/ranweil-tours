@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ranweli.controller.TouristDashboardFormController">
+   <children>
+      <AnchorPane layoutX="3.0" prefHeight="1000.0" prefWidth="955.0" style="-fx-background-color: #f7f1e3;">
+         <children>
+            <AnchorPane layoutX="61.0" layoutY="43.0" prefHeight="880.0" prefWidth="506.0" style="-fx-background-color: #218c74; -fx-background-radius: 15 0 0 15;" />
+            <Text fx:id="txtTimeNow" layoutX="21.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.69000244140625">
+               <font>
+                  <Font name="Poppins Regular" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="950.0" prefHeight="1000.0" prefWidth="950.0" style="-fx-background-color: #218c74;">
+         <children>
+            <AnchorPane layoutX="-792.0" layoutY="43.0" prefHeight="880.0" prefWidth="1690.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <Button fx:id="btnLogOut" layoutX="16.0" layoutY="805.0" mnemonicParsing="false" onAction="#logOutBtnOnAction" prefHeight="53.0" prefWidth="231.0" style="-fx-background-color: #218c74;" text="LOG OUT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="108.0" fitWidth="115.0" layoutX="1562.0" layoutY="7.0">
+                     <image>
+                        <Image url="@../assets/ranweli99-logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="txtWelcome" layoutX="43.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME" textAlignment="CENTER" wrappingWidth="313.356689453125">
+                     <font>
+                        <Font size="47.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane fx:id="btnBooking" layoutX="789.0" layoutY="88.0" onMouseClicked="#btnBookingOnAction" prefHeight="268.0" prefWidth="300.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Text fill="#218c74" layoutX="79.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking" textAlignment="CENTER" wrappingWidth="137.69000244140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="190.0" fitWidth="292.0" layoutX="4.0" layoutY="21.0">
+                           <image>
+                              <Image url="@../assets/icons/bookingIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="lblTime" layoutX="14.0" layoutY="602.0" prefHeight="19.0" prefWidth="114.0">
+                     <font>
+                        <Font name="Poppins Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tblPackages" layoutX="61.0" layoutY="407.0" prefHeight="364.0" prefWidth="1559.0">
+                    <columns>
+                      <TableColumn fx:id="colId" prefWidth="220.33334350585938" text="ID" />
+                      <TableColumn fx:id="colName" prefWidth="226.0" text="Name" />
+                        <TableColumn fx:id="colDesc" prefWidth="845.0" text="Descrption" />
+                        <TableColumn fx:id="colPrice" prefWidth="268.66668701171875" text="Price" />
+                    </columns>
+                  </TableView>
+                  <Text fx:id="txtAbout" fill="#636e72" layoutX="162.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ranweli Tour Guides in Sri Lanka offers exceptional tour guide packages, ensuring an unforgettable travel experience. Explore the beauty of Sri Lanka with knowledgeable guides who provide insightful information and personalized itineraries, making your journey truly memorable." wrappingWidth="553.3566284179688">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#e74c3c" layoutX="107.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hot Packages">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtLoggedUserName" layoutX="336.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <HBox fx:id="imageContainer" layoutX="1155.0" layoutY="115.0" prefHeight="253.0" prefWidth="427.0" />
+                  <ImageView layoutX="73.0" layoutY="370.0">
+                     <image>
+                        <Image url="@../assets/icons/icons8-hot.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#e74c3c" layoutX="1187.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offers">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="1151.0" layoutY="79.0">
+                     <image>
+                        <Image url="@../assets/icons/icons8-offers-badge.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

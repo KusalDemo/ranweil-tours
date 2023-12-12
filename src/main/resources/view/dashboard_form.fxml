@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ranweli.controller.DashboardFormController">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="1000.0" prefWidth="940.0" style="-fx-background-color: #f7f1e3;">
+         <children>
+            <AnchorPane layoutX="78.0" layoutY="60.0" prefHeight="878.0" prefWidth="861.0" style="-fx-background-color: #218c74; -fx-background-radius: 15 0 0 15;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="931.0" prefHeight="1000.0" prefWidth="969.0" style="-fx-background-color: #218c74;">
+         <children>
+            <AnchorPane layoutX="-765.0" layoutY="60.0" prefHeight="878.0" prefWidth="1660.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <Button fx:id="btnLogOut" layoutX="14.0" layoutY="828.0" mnemonicParsing="false" onAction="#logOutBtnOnAction" prefHeight="37.0" prefWidth="166.0" style="-fx-background-color: #ff7675;" text="LOG OUT" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Regular" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="93.0" fitWidth="103.0" layoutX="1539.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../assets/ranweli99-logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="txtWelcome" layoutX="17.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME" textAlignment="CENTER" wrappingWidth="251.35665893554688">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtUserName" layoutX="266.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font name="Poppins Regular" size="16.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane fx:id="btnEmployeeManagement" layoutX="181.0" layoutY="137.0" onMouseClicked="#manageEmployeesOnAction" prefHeight="268.0" prefWidth="300.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="168.0" fitWidth="268.0" layoutX="14.0" layoutY="51.0">
+                           <image>
+                              <Image url="@../assets/icons/employee_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="btnHotelManagement" layoutX="680.0" layoutY="130.0" onMouseClicked="#manageHotelsOnAction" prefHeight="268.0" prefWidth="300.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="207.0" fitWidth="248.0" layoutX="24.0" layoutY="33.0">
+                           <image>
+                              <Image url="@../assets/icons/hotel_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="btnVehicleManagement" layoutX="1183.0" layoutY="127.0" onMouseClicked="#manageVehiclesOnAction" prefHeight="268.0" prefWidth="300.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="224.0" fitWidth="268.0" layoutX="18.0" layoutY="22.0">
+                           <image>
+                              <Image url="@../assets/icons/vehicle_management_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text layoutX="238.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Employee" textAlignment="CENTER" wrappingWidth="165.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="757.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Hotels" textAlignment="CENTER" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="1244.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Vehicles" textAlignment="CENTER" wrappingWidth="168.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane fx:id="btnPackageManagement" layoutX="183.0" layoutY="472.0" onMouseClicked="#managePackagesOnAction" prefHeight="268.0" prefWidth="300.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="166.0" fitWidth="281.0" layoutX="10.0" layoutY="56.0">
+                           <image>
+                              <Image url="@../assets/icons/package_management2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text layoutX="247.0" layoutY="774.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Packages" textAlignment="CENTER" wrappingWidth="168.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane fx:id="btnManagePayments" layoutX="681.0" layoutY="474.0" onMouseClicked="#btnManagePaymentsOnAction" prefHeight="268.0" prefWidth="300.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="179.0" fitWidth="268.0" layoutX="16.0" layoutY="38.0">
+                           <image>
+                              <Image url="@../assets/icons/settings_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text layoutX="734.0" layoutY="778.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Payments" textAlignment="CENTER" wrappingWidth="186.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblTime" layoutX="14.0" layoutY="602.0" prefHeight="19.0" prefWidth="114.0">
+                     <font>
+                        <Font name="Poppins Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="txtLoggedAdminName" layoutX="275.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="281.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane fx:id="btnConfirmJourney" layoutX="1187.0" layoutY="471.0" onMouseClicked="#btnConfirmJourneyOnAction" prefHeight="268.0" prefWidth="300.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="191.0" fitWidth="292.0" layoutX="4.0" layoutY="39.0">
+                           <image>
+                              <Image url="@../assets/icons/travelEnding.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text layoutX="1251.0" layoutY="773.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Journey " textAlignment="CENTER" wrappingWidth="168.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="52.0" fitWidth="53.0" layoutX="730.0" layoutY="616.0">
+                     <image>
+                        <Image url="@../assets/ranweli99-logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

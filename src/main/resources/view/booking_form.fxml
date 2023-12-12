@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ranweli.controller.BookingFormController">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="1000.0" prefWidth="958.0" style="-fx-background-color: #f7f1e3;">
+         <children>
+            <AnchorPane layoutX="61.0" layoutY="44.0" prefHeight="880.0" prefWidth="506.0" style="-fx-background-color: #218c74; -fx-background-radius: 15 0 0 15;" />
+            <Text fx:id="txtTimeNow" layoutX="21.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.69000244140625">
+               <font>
+                  <Font name="Poppins Regular" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="950.0" prefHeight="1000.0" prefWidth="950.0" style="-fx-background-color: #218c74;">
+         <children>
+            <AnchorPane layoutX="-792.0" layoutY="44.0" prefHeight="880.0" prefWidth="1690.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <Button fx:id="btnBack" layoutX="3.0" layoutY="4.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="41.0" prefWidth="185.0" style="-fx-background-color: #f7f1e3; -fx-border-color: black;" text="BACK">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="84.0" fitWidth="88.0" layoutX="1588.0" layoutY="15.0">
+                     <image>
+                        <Image url="@../assets/ranweli99-logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="19.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Vehicles :" textAlignment="CENTER" wrappingWidth="174.625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblTime" layoutX="14.0" layoutY="602.0" prefHeight="19.0" prefWidth="114.0">
+                     <font>
+                        <Font name="Poppins Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tblPackages" layoutX="27.0" layoutY="590.0" prefHeight="258.0" prefWidth="1092.0">
+                     <columns>
+                        <TableColumn fx:id="colId" prefWidth="218.0" text="ID" />
+                        <TableColumn fx:id="colName" prefWidth="591.0" text="Name" />
+                        <TableColumn fx:id="colPrice" prefWidth="282.66668701171875" text="Price" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="tblVehicle" layoutX="20.0" layoutY="103.0" prefHeight="168.0" prefWidth="521.0">
+                     <columns>
+                        <TableColumn fx:id="colVehicleId" prefWidth="181.0" text="ID" />
+                        <TableColumn fx:id="colNumSeats" prefWidth="156.0" text="Seats" />
+                        <TableColumn fx:id="colDriverId" prefWidth="184.0" text="Driver ID" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="tblGuide" layoutX="575.0" layoutY="103.0" prefHeight="168.0" prefWidth="538.0">
+                     <columns>
+                        <TableColumn fx:id="colGuideId" prefWidth="200.33331298828125" text="ID" />
+                        <TableColumn fx:id="colGuideName" prefWidth="336.66668701171875" text="Name" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="tblHotel" layoutX="26.0" layoutY="332.0" prefHeight="203.0" prefWidth="1088.0">
+                     <columns>
+                        <TableColumn fx:id="colHotelId" prefWidth="244.33331298828125" text="ID" />
+                        <TableColumn fx:id="colHotelName" prefWidth="576.6666870117188" text="Name" />
+                        <TableColumn fx:id="colHotelType" prefWidth="266.3333435058594" text="Type" />
+                     </columns>
+                  </TableView>
+                  <Text layoutX="574.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Guides :" wrappingWidth="158.625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="35.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Hotels :" wrappingWidth="158.625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="1170.0" layoutY="131.0" prefHeight="597.0" prefWidth="428.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 15;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Text layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ranweli Tours " wrappingWidth="137.69000244140625">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="46.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Vehicle   :" wrappingWidth="107.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="46.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Guide     :" wrappingWidth="114.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="46.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Hotel      :" wrappingWidth="114.00000000000006">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtSelectedVehicle" layoutX="187.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="189.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtSelectedGuide" layoutX="189.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="189.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtSelectedHotel" layoutX="189.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="189.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="46.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Package :" wrappingWidth="121.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtSelectedPackage" layoutX="189.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="189.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="22.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To optimize your experience, please consider choosing accommodations close to your package destinations. Selecting hotels farther away may incur additional charges to cover extended transportation costs. For any assistance, contact us" textAlignment="CENTER" wrappingWidth="379.5">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtTotal" fill="#218c74" layoutX="191.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="180.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="69.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL :" textAlignment="CENTER" wrappingWidth="100.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="173.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No.99 Ranweli" textAlignment="CENTER" wrappingWidth="100.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Text layoutX="35.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Packages : " wrappingWidth="211.49999999999994">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnConfirmBooking" layoutX="1204.0" layoutY="753.0" mnemonicParsing="false" onAction="#btnConfirmBookingOnAction" prefHeight="82.0" prefWidth="360.0" style="-fx-background-color: #218c74; -fx-border-color: white; -fx-border-radius: 15; -fx-background-radius: 15;" text="CONFIRM BOOKING" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Text fill="#218c74" layoutX="437.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select your choices" textAlignment="CENTER" wrappingWidth="242.62506103515625">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

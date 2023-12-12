@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ranweli.controller.TouristLoginFormController">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="1000.0" prefWidth="951.0" style="-fx-background-color: #f7f1e3;">
+         <children>
+            <AnchorPane layoutX="80.0" layoutY="56.0" prefHeight="887.0" prefWidth="871.0" style="-fx-background-color: #218c74; -fx-background-radius: 15 0 0 15;">
+               <children>
+                  <Text layoutX="32.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RANWELI_" wrappingWidth="411.69000244140625">
+                     <font>
+                        <Font size="75.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtSubText" layoutX="33.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover, Explore – Your Journey, Our Expertise" wrappingWidth="796.0">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnBack" layoutX="34.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="67.0" prefWidth="236.0" style="-fx-background-color: #218c74; -fx-border-color: black;" text="GO BACK">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="944.0" prefHeight="1000.0" prefWidth="957.0" style="-fx-background-color: #218c74;">
+         <children>
+            <AnchorPane layoutY="55.0" prefHeight="885.0" prefWidth="881.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <Text layoutX="357.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" textAlignment="CENTER" wrappingWidth="173.69000244140625">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtUserId" layoutX="232.0" layoutY="325.0" prefHeight="52.0" prefWidth="441.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font></TextField>
+                  <Text layoutX="239.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="239.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnLogin" layoutX="273.0" layoutY="568.0" mnemonicParsing="false" onAction="#loginBtnOnAction" prefHeight="48.0" prefWidth="352.0" style="-fx-background-color: #218c74; -fx-border-color: #218c74;" text="LOGIN" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Text fill="#218c74" layoutX="437.0" layoutY="663.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnSignUp" layoutX="272.0" layoutY="687.0" mnemonicParsing="false" onAction="#signUpBtnOnAction" prefHeight="52.0" prefWidth="352.0" style="-fx-background-color: #f7f1e3; -fx-border-color: #218c74;" text="SIGN UP" textFill="#218c74">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="89.0" fitWidth="97.0" layoutX="396.0" layoutY="54.0">
+                     <image>
+                        <Image url="@../assets/ranweli99-logo.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="txtPassword" layoutX="231.0" layoutY="448.0" prefHeight="50.0" prefWidth="442.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font></PasswordField>
+                  <Text fx:id="txtForgetPassword" fill="#3366cc" layoutX="533.0" layoutY="517.0" onMouseClicked="#txtForgetPasswordOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Forget Password" underline="true" wrappingWidth="142.0810546875">
+                     <font>
+                        <Font name="System Italic" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

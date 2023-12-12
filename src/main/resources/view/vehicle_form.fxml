@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ranweli.controller.VehicleFormController">
+   <children>
+      <AnchorPane layoutX="-5.0" prefHeight="1000.0" prefWidth="950.0" style="-fx-background-color: #f7f1e3;">
+         <children>
+            <AnchorPane layoutX="71.0" layoutY="44.0" prefHeight="879.0" prefWidth="506.0" style="-fx-background-color: #218c74; -fx-background-radius: 15 0 0 15;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="950.0" prefHeight="1000.0" prefWidth="950.0" style="-fx-background-color: #218c74;">
+         <children>
+            <AnchorPane layoutX="-792.0" layoutY="43.0" prefHeight="880.0" prefWidth="1690.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <Button fx:id="btnBack" layoutX="63.0" layoutY="806.0" mnemonicParsing="false" onAction="#backBtnOnAction" prefHeight="53.0" prefWidth="223.0" style="-fx-background-color: #218c74; -fx-border-color: #218c74;" text="BACK" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="108.0" fitWidth="112.0" layoutX="1558.0" layoutY="11.0">
+                     <image>
+                        <Image url="@../assets/ranweli99-logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="txtVehicle" layoutX="74.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Management" wrappingWidth="497.69000244140625">
+                     <font>
+                        <Font name="Poppins Regular" size="43.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="118.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle ID" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtVehicleId" layoutX="115.0" layoutY="162.0" onMouseClicked="#txtVehicleIdOnAction" prefHeight="42.0" prefWidth="400.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font></TextField>
+                  <Text layoutX="615.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtStatus" layoutX="609.0" layoutY="162.0" prefHeight="42.0" prefWidth="400.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font></TextField>
+                  <Text layoutX="1102.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of seats" wrappingWidth="197.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtNumberOfSeats" layoutX="1099.0" layoutY="160.0" prefHeight="42.0" prefWidth="400.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font></TextField>
+                  <Text layoutX="117.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="tblVehicle" layoutX="83.0" layoutY="470.0" prefHeight="306.0" prefWidth="1543.0">
+                     <columns>
+                        <TableColumn fx:id="colId" prefWidth="291.99993896484375" text="ID" />
+                        <TableColumn fx:id="colStatus" prefWidth="671.0000610351562" text="Status" />
+                        <TableColumn fx:id="colNumberOfSeats" prefWidth="248.66668701171875" text="Number of seats" />
+                        <TableColumn fx:id="colEmployeeId" minWidth="4.0" prefWidth="331.66668701171875" text="Employee ID" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="1425.0" layoutY="357.0" mnemonicParsing="false" onAction="#saveBtnOnAction" prefHeight="42.0" prefWidth="175.0" style="-fx-background-color: #f7f1e3; -fx-border-color: #218c74;" text="SAVE" textFill="#218c74">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="1240.0" layoutY="357.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="42.0" prefWidth="175.0" style="-fx-background-color: #f7f1e3; -fx-border-color: #cf6a87;" text="DELETE" textFill="#cf6a87">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="1053.0" layoutY="357.0" mnemonicParsing="false" onAction="#updateBtnOnAction" prefHeight="42.0" prefWidth="175.0" style="-fx-background-color: #f7f1e3; -fx-border-color: #3dc1d3;" text="UPDATE" textFill="#3dc1d3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="865.0" layoutY="357.0" mnemonicParsing="false" onAction="#clearBtnOnAction" prefHeight="42.0" prefWidth="175.0" style="-fx-background-color: #f7f1e3; -fx-border-color: #f19066;" text="CLEAR" textFill="#f19066">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="cmbEmployeeId" layoutX="115.0" layoutY="269.0" prefHeight="42.0" prefWidth="400.0" visibleRowCount="17" />
+                  <Button fx:id="btnReport" layoutX="1410.0" layoutY="807.0" mnemonicParsing="false" onAction="#btnReportOnAction" prefHeight="54.0" prefWidth="231.0" style="-fx-background-color: #218c74;" text="Print Report" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

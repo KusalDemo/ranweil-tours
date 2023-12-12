@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="employeeReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a3279ef0-8de3-41cc-8c34-def51901a702">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ranweliToursAdapter"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM employee;]]>
+	</queryString>
+	<field name="empId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="empId"/>
+		<property name="com.jaspersoft.studio.field.label" value="empId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="address"/>
+		<property name="com.jaspersoft.studio.field.label" value="address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="type"/>
+		<property name="com.jaspersoft.studio.field.label" value="type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="availability" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="availability"/>
+		<property name="com.jaspersoft.studio.field.label" value="availability"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="salary" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="salary"/>
+		<property name="com.jaspersoft.studio.field.label" value="salary"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="admin" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="admin"/>
+		<property name="com.jaspersoft.studio.field.label" value="admin"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<variable name="tolSalary" class="java.lang.Double" resetType="Group" resetGroup="type" calculation="Sum">
+		<variableExpression><![CDATA[$F{salary}]]></variableExpression>
+	</variable>
+	<group name="type">
+		<groupExpression><![CDATA[$F{type}]]></groupExpression>
+		<groupHeader>
+			<band height="50">
+				<textField>
+					<reportElement x="17" y="10" width="100" height="30" backcolor="#C8E3CC" uuid="c3c45ceb-dca9-48f1-a972-eb2b8cad913f"/>
+					<textElement>
+						<font size="15"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="50">
+				<textField>
+					<reportElement x="434" y="6" width="100" height="30" uuid="99266618-5308-49d2-b856-81a14cb71057"/>
+					<textFieldExpression><![CDATA[$V{tolSalary}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="329" y="5" width="100" height="30" uuid="9e57c3d9-6223-43b2-af27-0bb690e8a87a"/>
+					<textElement textAlignment="Center"/>
+					<text><![CDATA[Total Salary :]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="116" splitType="Stretch">
+			<staticText>
+				<reportElement x="231" y="85" width="100" height="14" uuid="9cd1a17b-1d0c-4b40-9a2c-bdcce3e473c4"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Employees List]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="70" width="100" height="20" uuid="cbc6b6b5-db10-4e13-b4f1-c43fdc340f2c"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="425" y="70" width="100" height="19" uuid="605da367-e7c4-4779-a5b3-ccee0f23db1d"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="144" y="4" width="70" height="70" uuid="a1059b45-23e4-45a3-b337-404c739bc27c"/>
+				<imageExpression><![CDATA["/home/kitty/IdeaProjects/ranweil-tour/src/main/resources/assets/ranweli99-logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="219" y="10" width="182" height="30" uuid="6eea1463-e3ca-4dcd-975b-53fec93958d4"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ranweli Tours]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="224" y="37" width="175" height="14" uuid="9382a853-07f5-43d5-a768-5eca600ffa93"/>
+				<textElement textAlignment="Left">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[No 99, Kawudupelella 21000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="224" y="53" width="175" height="14" uuid="62071534-c39f-40c9-8ee9-0a06d146015d"/>
+				<textElement textAlignment="Left">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[0662 247 339]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="8" y="103" width="542" height="1" uuid="3156cfdc-19d7-4e32-a394-9c91a961b55f"/>
+			</rectangle>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement x="18" y="0" width="141" height="30" uuid="fb9e7222-083f-4917-a889-83240ef5f974">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e99798cb-a95d-417a-95fd-6a0b509b4673"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[empId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="159" y="0" width="138" height="30" uuid="652e6586-e626-4915-aba5-5d5166b9e5ca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b2ebad38-d0a5-4da2-a89b-07ed079001a9"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="297" y="0" width="138" height="30" uuid="7e123e56-f63b-4915-9ea3-0e38129efd43">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d54822fd-058d-438d-b444-4c7e73cdb80e"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="0" width="138" height="30" uuid="4154cdac-d28b-41a8-955e-e20f4230a515">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="14ae1e9e-87ac-473f-8815-ea99ea84110a"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[salary]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="18" y="0" width="141" height="30" uuid="eea3e0ec-8d26-413b-aa9f-6f6ef31b3234">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e99798cb-a95d-417a-95fd-6a0b509b4673"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{empId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="159" y="0" width="138" height="30" uuid="4fb6a015-fa2e-453a-8e07-f170f2d6f9f6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b2ebad38-d0a5-4da2-a89b-07ed079001a9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="0" width="138" height="30" uuid="e0ad6d71-f3e8-46a1-9fa0-ac5d3cda9e17">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d54822fd-058d-438d-b444-4c7e73cdb80e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="435" y="0" width="138" height="30" uuid="2b50a411-41ba-4df9-9c9d-08c042958f39">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="14ae1e9e-87ac-473f-8815-ea99ea84110a"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{salary}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="231" y="32" width="100" height="19" uuid="27922905-1617-4b45-a07e-9694b1d1f2a0"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Ranweli@99]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

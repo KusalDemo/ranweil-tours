@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ranweli.controller.HotelFormController">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="1000.0" prefWidth="958.0" style="-fx-background-color: #f7f1e3;">
+         <children>
+            <AnchorPane layoutX="66.0" layoutY="61.0" prefHeight="878.0" prefWidth="506.0" style="-fx-background-color: #218c74; -fx-background-radius: 15 0 0 15;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="950.0" prefHeight="1000.0" prefWidth="950.0" style="-fx-background-color: #218c74;">
+         <children>
+            <AnchorPane layoutX="-801.0" layoutY="60.0" prefHeight="880.0" prefWidth="1690.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <Button fx:id="btnBack" layoutX="49.0" layoutY="808.0" mnemonicParsing="false" onAction="#backBtnOnAction" prefHeight="50.0" prefWidth="228.0" style="-fx-background-color: #218c74; -fx-border-color: #218c74;" text="BACK" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="103.0" fitWidth="112.0" layoutX="1564.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../assets/ranweli99-logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="txtTitle" layoutX="46.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Management" wrappingWidth="497.69000244140625">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="74.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel ID" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtHotelId" layoutX="70.0" layoutY="184.0" onMouseClicked="#txtHotelIdOnAction" prefHeight="42.0" prefWidth="400.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font></TextField>
+                  <Text layoutX="627.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Name" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtHotelName" layoutX="623.0" layoutY="179.0" prefHeight="42.0" prefWidth="400.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font></TextField>
+                  <Text layoutX="1163.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtHotelType" layoutX="1161.0" layoutY="180.0" prefHeight="42.0" prefWidth="400.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font></TextField>
+                  <Text layoutX="69.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status (YES/NO)" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="tblHotel" layoutX="55.0" layoutY="460.0" prefHeight="314.0" prefWidth="1589.0">
+                     <columns>
+                        <TableColumn fx:id="colId" prefWidth="313.0" text="ID" />
+                        <TableColumn fx:id="colName" prefWidth="549.9999389648438" text="Name" />
+                        <TableColumn fx:id="colType" prefWidth="416.00006103515625" text="Type" />
+                        <TableColumn fx:id="colStatus" minWidth="4.0" prefWidth="310.6666259765625" text="Status" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="1418.0" layoutY="346.0" mnemonicParsing="false" onAction="#saveBtnOnAction" prefHeight="45.0" prefWidth="175.0" style="-fx-background-color: #f7f1e3; -fx-border-color: #218c74;" text="SAVE" textFill="#218c74">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="1234.0" layoutY="347.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="45.0" prefWidth="175.0" style="-fx-background-color: #f7f1e3; -fx-border-color: cf6a87;" text="DELETE" textFill="#cf6a87">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="1049.0" layoutY="348.0" mnemonicParsing="false" onAction="#updateBtnOnAction" prefHeight="45.0" prefWidth="175.0" style="-fx-background-color: #f7f1e3; -fx-border-color: #3dc1d3;" text="UPDATE" textFill="#3dc1d3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="863.0" layoutY="349.0" mnemonicParsing="false" onAction="#clearBtnOnAction" prefHeight="45.0" prefWidth="175.0" style="-fx-background-color: #f7f1e3; -fx-border-color: #f19066;" text="CLEAR" textFill="#f19066">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtStatus" layoutX="70.0" layoutY="294.0" prefHeight="42.0" prefWidth="400.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font></TextField>
+                  <Button fx:id="btnReport" layoutX="1410.0" layoutY="798.0" mnemonicParsing="false" onAction="#btnReportOnAction" prefHeight="54.0" prefWidth="231.0" style="-fx-background-color: #218c74;" text="Print Report" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

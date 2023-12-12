@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="vehicleReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="31ac06c1-8395-4c52-b9b5-604a558cabf6">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ranweliToursAdapter"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM vehicle;]]>
+	</queryString>
+	<field name="vehicleId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="vehicleId"/>
+		<property name="com.jaspersoft.studio.field.label" value="vehicleId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicle"/>
+	</field>
+	<field name="status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="status"/>
+		<property name="com.jaspersoft.studio.field.label" value="status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicle"/>
+	</field>
+	<field name="numberOfSeats" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="numberOfSeats"/>
+		<property name="com.jaspersoft.studio.field.label" value="numberOfSeats"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicle"/>
+	</field>
+	<field name="empId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="empId"/>
+		<property name="com.jaspersoft.studio.field.label" value="empId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicle"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="124" splitType="Stretch">
+			<staticText>
+				<reportElement x="219" y="10" width="182" height="30" uuid="510f0d76-cc77-46f0-9859-42fabb3d554a"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ranweli Tours]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="89" width="100" height="14" uuid="1d99aea2-c6db-44a2-b572-00be1fee1a81"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Vehicle List]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="80" width="100" height="20" uuid="48ceb450-3d6a-43f5-aeec-7b88946cafb6"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="429" y="80" width="100" height="19" uuid="16a8951a-b08c-48b5-8b32-fe731b38d17b"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="144" y="4" width="70" height="70" uuid="0e428b7f-579e-4328-8f03-611bfc49740d"/>
+				<imageExpression><![CDATA["/home/kitty/IdeaProjects/ranweil-tour/src/main/resources/assets/ranweli99-logo.png"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="20" y="110" width="512" height="1" uuid="45b96310-9aeb-4bb3-a4ba-65f828199a39"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="224" y="37" width="175" height="14" uuid="32736167-e055-44cd-ad90-6ae3502421ff"/>
+				<textElement textAlignment="Left">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[No 99, Kawudupelella 21000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="224" y="53" width="175" height="14" uuid="3db0cc96-61b1-45f4-b3b9-0c493abdc4ed"/>
+				<textElement textAlignment="Left">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[0662 247 339]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="127" y="10" width="93" height="30" uuid="555d01b8-67cb-493c-a2d7-21f0ddeaf230">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ac828baa-2026-491e-a775-31827fb843c9"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[vehicleId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="10" width="99" height="30" uuid="25ca2249-666f-45e6-abe3-ee9c931fc362">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3230ec71-5e24-4d2b-a6b6-c1517403f78e"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[numberOfSeats]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="353" y="10" width="100" height="30" uuid="b008fc51-7b68-4f26-a493-bb477d54e0a5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d861a7c-57fa-499a-b189-c6e8bac7f3f4"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[empId]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="128" y="0" width="92" height="30" uuid="72b8b223-0ab4-4af1-8355-0779d6be9246">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ac828baa-2026-491e-a775-31827fb843c9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{vehicleId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="0" width="97" height="30" uuid="6db8f76b-5f36-43a0-b20d-d133d4fe98ed">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3230ec71-5e24-4d2b-a6b6-c1517403f78e"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{numberOfSeats}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="1" width="100" height="30" uuid="f7d3145d-77c3-4ad1-964f-64f6af7d353d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d861a7c-57fa-499a-b189-c6e8bac7f3f4"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{empId}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="231" y="60" width="100" height="19" uuid="9145c0bc-e320-4a25-8e62-bbe8d8f4231d"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Ranweli@99]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="16" width="530" height="44" uuid="7bf2abfa-1431-4f15-8e40-4559bb671bb9"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Note: The driver ID associated with each vehicle may change over time. The driver ID mentioned in this report corresponds to the information available as of the report generation date. Please refer to the latest records for the most up-to-date driver information.]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

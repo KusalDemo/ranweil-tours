@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ranweli.controller.TouristSignUpFormController">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="1000.0" prefWidth="949.0" style="-fx-background-color: #f7f1e3;">
+         <children>
+            <AnchorPane layoutX="71.0" layoutY="59.0" prefHeight="880.0" prefWidth="920.0" style="-fx-background-color: #218c74; -fx-background-radius: 15 0 0 15;">
+               <children>
+                  <Text layoutX="48.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RANWELI_" wrappingWidth="411.69000244140625">
+                     <font>
+                        <Font size="75.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtSubText" layoutX="48.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover, Explore – Your Journey, Our Expertise" wrappingWidth="796.0">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="943.0" prefHeight="1000.0" prefWidth="957.0" style="-fx-background-color: #218c74;">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="59.0" prefHeight="880.0" prefWidth="907.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <Text layoutX="361.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGNUP" textAlignment="CENTER" wrappingWidth="168.69000244140625">
+                     <font>
+                        <Font name="Poppins Regular" size="43.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtUserName" layoutX="208.0" layoutY="252.0" prefHeight="39.0" prefWidth="461.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font></TextField>
+                  <Text layoutX="206.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Name">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
+                  <Text layoutX="208.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
+                  <Button fx:id="btnSignUp" layoutX="266.0" layoutY="667.0" mnemonicParsing="false" onAction="#signUpBtnOnAction" prefHeight="46.0" prefWidth="346.0" style="-fx-background-color: #218c74;" text="SIGNUP" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Text fill="#218c74" layoutX="427.0" layoutY="750.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnAlreadyHaveAnAccount" layoutX="272.0" layoutY="768.0" mnemonicParsing="false" onAction="#alreadyHaveAnAccountBtnOnAction" prefHeight="36.0" prefWidth="337.0" style="-fx-background-color: #f7f1e3; -fx-border-color: #218c74;" text="Already have an account" textFill="#218c74">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="84.0" fitWidth="88.0" layoutX="402.0" layoutY="34.0">
+                     <image>
+                        <Image url="@../assets/ranweli99-logo.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="txtPassword" layoutX="208.0" layoutY="504.0" prefHeight="39.0" prefWidth="461.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font></PasswordField>
+                  <TextField fx:id="txtId" layoutX="208.0" layoutY="335.0" prefHeight="39.0" prefWidth="461.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font></TextField>
+                  <Text layoutX="206.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC / Passport ID">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
+                  <Text layoutX="208.0" layoutY="582.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Re Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
+                  <PasswordField fx:id="txtRePassword" layoutX="206.0" layoutY="596.0" prefHeight="39.0" prefWidth="461.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font></PasswordField>
+                  <TextField fx:id="txtEmail" layoutX="208.0" layoutY="418.0" prefHeight="39.0" prefWidth="461.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="206.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email ">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

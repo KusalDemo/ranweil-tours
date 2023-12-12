@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ranweli.controller.PaymentManageFormController">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="1000.0" prefWidth="958.0" style="-fx-background-color: #f7f1e3;">
+         <children>
+            <AnchorPane layoutX="62.0" layoutY="43.0" prefHeight="880.0" prefWidth="506.0" style="-fx-background-color: #218c74; -fx-background-radius: 15 0 0 15;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="950.0" prefHeight="1000.0" prefWidth="950.0" style="-fx-background-color: #218c74;">
+         <children>
+            <AnchorPane fx:id="txtPayment" layoutX="-792.0" layoutY="43.0" prefHeight="880.0" prefWidth="1690.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <Button fx:id="btnBack" layoutX="30.0" layoutY="817.0" mnemonicParsing="false" onAction="#backBtnOnAction" prefHeight="47.0" prefWidth="255.0" style="-fx-background-color: #218c74; -fx-border-color: #218c74;" text="BACK" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="107.0" fitWidth="115.0" layoutX="1560.0" layoutY="10.0">
+                     <image>
+                        <Image url="@../assets/ranweli99-logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="29.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Management" wrappingWidth="497.69000244140625">
+                     <font>
+                        <Font name="Poppins Regular" size="43.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="87.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment ID" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtPayId" layoutX="82.0" layoutY="154.0" prefHeight="42.0" prefWidth="400.0" />
+                  <Text layoutX="570.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Type" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtPaymentType" layoutX="569.0" layoutY="154.0" prefHeight="42.0" prefWidth="400.0" />
+                  <Text layoutX="1059.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtDate" layoutX="1058.0" layoutY="155.0" prefHeight="42.0" prefWidth="400.0" />
+                  <Text layoutX="84.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="tblPayment" layoutX="57.0" layoutY="412.0" prefHeight="355.0" prefWidth="1571.0">
+                     <columns>
+                        <TableColumn fx:id="colId" prefWidth="281.3333435058594" text="ID" />
+                        <TableColumn fx:id="colAmount" prefWidth="414.33331298828125" text="Amount" />
+                        <TableColumn fx:id="colStatus" prefWidth="281.666748046875" text="Status" />
+                        <TableColumn fx:id="colDate" minWidth="4.0" prefWidth="303.3333740234375" text="Date" />
+                        <TableColumn fx:id="colMethod" minWidth="4.0" prefWidth="294.6666259765625" text="Method" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="btnView" layoutX="1123.0" layoutY="285.0" mnemonicParsing="false" onAction="#btnViewOnAction" prefHeight="42.0" prefWidth="400.0" style="-fx-border-color: #218c74; -fx-background-color: #f7f1e3;" text="VIEW PAYMENT IMAGE" textFill="#218c74">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="934.0" layoutY="285.0" mnemonicParsing="false" onAction="#clearBtnOnAction" prefHeight="42.0" prefWidth="175.0" style="-fx-border-color: #f19066; -fx-background-color: #f7f1e3;" text="CLEAR" textFill="#f19066">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtAmount" layoutX="80.0" layoutY="245.0" prefHeight="42.0" prefWidth="400.0" />
+                  <Button fx:id="btnReport" layoutX="1402.0" layoutY="807.0" mnemonicParsing="false" onAction="#btnReportOnAction" prefHeight="54.0" prefWidth="231.0" style="-fx-background-color: #218c74;" text="Print Report" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

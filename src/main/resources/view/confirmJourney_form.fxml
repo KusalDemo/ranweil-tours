@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ranweli.controller.ConfirmJourneyFormController">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="1000.0" prefWidth="940.0" style="-fx-background-color: #f7f1e3;">
+         <children>
+            <AnchorPane layoutX="78.0" layoutY="60.0" prefHeight="878.0" prefWidth="861.0" style="-fx-background-color: #218c74; -fx-background-radius: 15 0 0 15;">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="23.0" layoutY="19.0">
+                     <image>
+                        <Image url="@../assets/icons/shield-80.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="931.0" prefHeight="1000.0" prefWidth="969.0" style="-fx-background-color: #218c74;">
+         <children>
+            <AnchorPane layoutX="-765.0" layoutY="60.0" prefHeight="878.0" prefWidth="1660.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <Button fx:id="btnBack" layoutX="14.0" layoutY="828.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="37.0" prefWidth="166.0" style="-fx-background-color: #ff7675;" text="BACK" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Regular" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="93.0" fitWidth="103.0" layoutX="1539.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../assets/ranweli99-logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="txtWelcome" layoutX="7.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm End Of Journey" textAlignment="CENTER" wrappingWidth="608.6899719238281">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtUserName" layoutX="266.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.69000244140625">
+                     <font>
+                        <Font name="Poppins Regular" size="16.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="568.0" layoutY="286.0" prefHeight="396.0" prefWidth="516.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 15;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Text layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ranweli Tours " wrappingWidth="137.69000244140625">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="46.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Vehicle ID   :" wrappingWidth="135.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="46.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Guide ID     :" wrappingWidth="135.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="46.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Hotel ID      :" wrappingWidth="135.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtSelectedVehicle" layoutX="197.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="189.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtSelectedGuide" layoutX="196.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="189.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtSelectedHotel" layoutX="197.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="189.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="45.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Payment ID   :" wrappingWidth="149.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtPaymentId" layoutX="196.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="189.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="213.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No.99 Ranweli" textAlignment="CENTER" wrappingWidth="100.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="46.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Driver ID     :" wrappingWidth="141.75">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtSelectedDriver" layoutX="196.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="189.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="46.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Paid Amount :" wrappingWidth="149.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtAmount" layoutX="197.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="189.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="47.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Paid Date      :" wrappingWidth="149.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtDate" layoutX="198.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="189.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#218c74" layoutX="28.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booked Resources">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#218c74" layoutX="29.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Details">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="btnConfirmJourney" layoutX="746.0" layoutY="709.0" mnemonicParsing="false" onAction="#btnConfirmJourneyOnAction" prefHeight="37.0" prefWidth="166.0" style="-fx-background-color: #218c74;" text="CONFIRM" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView layoutX="785.0" layoutY="171.0">
+                     <image>
+                        <Image url="@../assets/icons/qrCode.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#218c74" layoutX="738.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scan QR code">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="img2" fitHeight="321.0" fitWidth="385.0" layoutX="1196.0" layoutY="421.0">
+                     <image>
+                        <Image url="@../assets/icons/completeTheTour.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img1" fitHeight="268.0" fitWidth="428.0" layoutX="76.0" layoutY="112.0">
+                     <image>
+                        <Image url="@../assets/icons/updateInformation.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnQRScanner" layoutX="714.0" layoutY="130.0" mnemonicParsing="false" onAction="#btnQRScannerOnAction" prefHeight="112.0" prefWidth="209.0" style="-fx-background-color: transparent;" text="Button" textFill="TRANSPARENT" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

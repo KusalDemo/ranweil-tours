@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="parentContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ranweli.controller.WelcomeFormControllers.WelcomeFormController">
+   <children>
+      <AnchorPane fx:id="anchorRoot" prefHeight="1000.0" prefWidth="1900.0" style="-fx-background-color: #fefffe;">
+         <children>
+            <AnchorPane layoutX="-4.0" layoutY="653.0" prefHeight="351.0" prefWidth="1905.0" style="-fx-background-color: #218c74;">
+               <children>
+                  <Text fx:id="txtOurServices" fill="#ecf0f1" layoutX="1412.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OUR SERVICES" wrappingWidth="455.228515625">
+                     <font>
+                        <Font size="54.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnServices" layoutX="769.0" layoutY="267.0" mnemonicParsing="false" onMouseClicked="#btnServicesOnAction" prefHeight="70.0" prefWidth="367.0" style="-fx-background-radius: 15; -fx-background-color: #218c74; -fx-border-color: #ecf0f1;" text="SERVICES" textFill="#ecf0f1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Text fx:id="txtRanweli" layoutX="91.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RANWELI_">
+               <font>
+                  <Font size="52.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtAboutRanweli" layoutX="106.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ranweli, a premier tour guide business in the breathtaking landscapes of Sri Lanka, &#10;offers an unforgettable and immersive travel experience. With a deep-rooted passion&#10;for showcasing the hidden gems of this island paradise, Ranweli is committed to providing&#10; travelers with a unique blend of cultural enrichment and natural beauty.&#10; Our knowledgeable and friendly guides are well-versed in the rich history, vibrant traditions, and &#10;diverse ecosystems of Sri Lanka, ensuring that every excursion is not just a journey, but a captivating &#10;story waiting to be told. Whether you seek a historical expedition to ancient temples, a thrilling wildlife&#10;adventure in the lush jungles, or simply a serene escape to pristine beaches, Ranweli takes you on a &#10;personalized voyage through the heart and soul of this enchanting nation. Come, discover Sri Lanka with us, &#10;and let Ranweli create memories that will last a lifetime." wrappingWidth="1394.0628662109375">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnAdminLogin" layoutX="1614.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#btnAdminLoginOnAction" prefHeight="53.0" prefWidth="278.0" style="-fx-background-radius: 15; -fx-background-color: #ecf0f1; -fx-border-color: black;" text="ADMIN LOGIN">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <ImageView layoutX="94.0" layoutY="63.0">
+               <image>
+                  <Image url="@../../assets/ranweli99-logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnTouristLogin" layoutX="1325.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#btnTouristLoginOnAction" prefHeight="53.0" prefWidth="278.0" style="-fx-background-radius: 15; -fx-background-color: #ecf0f1; -fx-border-color: black;" text="TOURIST LOGIN">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblTime" layoutX="906.0" layoutY="10.0" prefHeight="45.0" prefWidth="207.0" textAlignment="JUSTIFY" textFill="#218c74">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Label>
+            <ImageView fitHeight="255.0" fitWidth="380.0" layoutX="1474.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="321.0" fitWidth="489.0" layoutX="1398.0" layoutY="298.0">
+               <image>
+                  <Image url="@../../assets/icons/travel_map.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

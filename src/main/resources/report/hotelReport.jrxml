@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="hotelReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1390650a-550d-469d-93ff-1f0638c737fd">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ranweliToursAdapter"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM hotel;]]>
+	</queryString>
+	<field name="hotelId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="hotelId"/>
+		<property name="com.jaspersoft.studio.field.label" value="hotelId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hotel"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hotel"/>
+	</field>
+	<field name="type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="type"/>
+		<property name="com.jaspersoft.studio.field.label" value="type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hotel"/>
+	</field>
+	<field name="status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="status"/>
+		<property name="com.jaspersoft.studio.field.label" value="status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hotel"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="115" splitType="Stretch">
+			<staticText>
+				<reportElement x="231" y="88" width="100" height="14" uuid="4926d276-8a23-4689-9f0a-7abf9194eb0e"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Hotel List]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="64" width="100" height="20" uuid="fdd272e6-7921-4ac2-9c60-5d34f291ef9f"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="425" y="64" width="100" height="19" uuid="1a0c8af7-968c-4cda-af5d-8a445e0fa25c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="9" y="107" width="542" height="1" uuid="4a47aa76-25ec-44aa-ad98-71f487acec8c"/>
+			</rectangle>
+			<image>
+				<reportElement x="144" y="4" width="70" height="70" uuid="8b55e2e4-de66-4ebd-899b-a5bb7b7855c6"/>
+				<imageExpression><![CDATA["/home/kitty/IdeaProjects/ranweil-tour/src/main/resources/assets/ranweli99-logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="224" y="37" width="175" height="14" uuid="ff4e3e0c-0f9a-49e0-a69d-cc4120e1a42c"/>
+				<textElement textAlignment="Left">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[No 99, Kawudupelella 21000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="219" y="10" width="182" height="30" uuid="2af10d4b-1dc5-418d-b9c7-205a87b94dab"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ranweli Tours]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="224" y="53" width="175" height="14" uuid="e61523af-e6fa-495b-adbd-fdddf0db8333"/>
+				<textElement textAlignment="Left">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[0662 247 339]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="28" y="0" width="160" height="30" uuid="f666f1ed-009b-46b0-bdf6-fa28327f32ad">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3e9350b4-9439-4281-b49d-d47cb2befbd5"/>
+				</reportElement>
+				<text><![CDATA[hotelId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="213" y="0" width="185" height="30" uuid="ce77b68a-4b2c-4b21-8205-f8d175a9ec2f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8ae16a7b-298c-42e2-bfaf-4c2aff32ac18"/>
+				</reportElement>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="398" y="0" width="160" height="30" uuid="cf4d3646-0c55-4536-869d-1f9c7887e185">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9749cfa5-cf2e-4768-914b-516b0c06fccc"/>
+				</reportElement>
+				<text><![CDATA[type]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="28" y="0" width="185" height="30" uuid="dcd2945a-7768-4306-b0ce-3468e74b1d0f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3e9350b4-9439-4281-b49d-d47cb2befbd5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{hotelId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="213" y="0" width="185" height="30" uuid="2c71f6b7-b62b-4730-ab96-4e5c32d1a316">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8ae16a7b-298c-42e2-bfaf-4c2aff32ac18"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="398" y="0" width="160" height="30" uuid="ea6f7272-0ef9-4cc0-b986-6569c2c2c2f7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9749cfa5-cf2e-4768-914b-516b0c06fccc"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="231" y="32" width="100" height="19" uuid="f6e1a182-650c-4d85-90fd-488dc5897901"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Ranweli@99]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

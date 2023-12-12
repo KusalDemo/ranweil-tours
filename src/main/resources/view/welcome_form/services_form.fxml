@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorRoot" prefHeight="1000.0" prefWidth="1900.0" style="-fx-background-color: #fefffe;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ranweli.controller.WelcomeFormControllers.ServicesFormController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-13.0" prefHeight="738.0" prefWidth="1905.0" style="-fx-background-color: #218c74; -fx-background-radius: 0 0 15 15;">
+         <children>
+            <Text fx:id="txtOurServices" fill="#ecf0f1" layoutX="39.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OUR SERVICES" wrappingWidth="533.8951416015625">
+               <font>
+                  <Font size="54.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnPrev" layoutX="804.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#btnPrevOnAction" prefHeight="52.0" prefWidth="303.0" style="-fx-background-radius: 15; -fx-background-color: #218c74; -fx-border-color: #ecf0f1;" text="PREV" textFill="#ecf0f1">
+               <font>
+                  <Font name="Poppins Regular" size="14.0" />
+               </font>
+            </Button>
+            <Text fx:id="txtAboutServices" fill="#ecf0f1" layoutX="43.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ranweli Tour Guides offer a comprehensive range of services to ensure a remarkable and hassle-free travel experience in Sri Lanka:" wrappingWidth="1454.0628662109375">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtService1" layoutX="122.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Wide Range of Packages" wrappingWidth="586.3599853515625">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtAboutService1" layoutX="197.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ranweli prides itself on providing an extensive selection of tour packages tailored to suit diverse preferences and interests. Whether you are a history enthusiast, a nature lover, or an adventure seeker, there's a package to match your desires. From cultural expeditions to wildlife safaris, Ranweli has thoughtfully crafted itineraries to explore the best of Sri Lanka." wrappingWidth="1555.3961181640625">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtService2" layoutX="122.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Luxury Hotels" wrappingWidth="586.3599853515625">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtAboutService2" layoutX="197.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your comfort and relaxation are a top priority with Ranweli. They partner with a network of luxury hotels and accommodations to ensure that your stay in Sri Lanka is nothing short of exceptional. From serene beachfront resorts to charming boutique hotels, their selection guarantees a restful and opulent experience." wrappingWidth="1538.0628662109375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtService3" layoutX="122.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Comfortable Vehicles" wrappingWidth="586.3599853515625">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtAboutService3" layoutX="198.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Traveling around Sri Lanka is made effortless with Ranweli's fleet of comfortable vehicles. Modern and well-maintained, these vehicles are designed to provide a smooth and enjoyable journey. Whether you are traversing through bustling cities or navigating the picturesque countryside, you can count on their transportation to be both safe and comfortable." wrappingWidth="1526.0628662109375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtService4" layoutX="122.0" layoutY="613.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Experienced Guides" wrappingWidth="586.3599853515625">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtAboutService4" layoutX="200.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ranweli's team of knowledgeable and friendly tour guides are the heart of your Sri Lankan adventure. These guides are well-versed in the country's history, culture, and natural wonders, offering insights and stories that breathe life into your journey. Their expertise ensures that you not only see the sites but truly understand and appreciate the rich heritage and beauty of Sri Lanka" wrappingWidth="1539.396240234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnGallery" layoutX="790.0" layoutY="933.0" mnemonicParsing="false" onMouseClicked="#btnGalleryOnAction" prefHeight="47.0" prefWidth="332.0" style="-fx-background-radius: 15; -fx-background-color: #ecf0f1; -fx-border-color: black;" text="GALLERY">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnGetStarted" layoutX="822.0" layoutY="731.0" mnemonicParsing="false" onMouseClicked="#btnGetStartedOnAction" prefHeight="47.0" prefWidth="272.0" style="-fx-background-radius: 15; -fx-background-color: #ecf0f1; -fx-border-color: #218c74;" text="Get Started" textFill="#218c74">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text fx:id="txtGallery" layoutX="1505.0" layoutY="816.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GALLERY" textAlignment="RIGHT" wrappingWidth="350.3599853515625">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imgServices" fitHeight="250.0" fitWidth="363.0" layoutX="156.0" layoutY="735.0">
+         <image>
+            <Image url="@../../assets/icons/SevicesPage_img.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

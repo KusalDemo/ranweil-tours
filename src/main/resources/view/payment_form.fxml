@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ranweli.controller.PaymentFormController">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="1000.0" prefWidth="956.0" style="-fx-background-color: #f7f1e3;">
+         <children>
+            <AnchorPane layoutX="61.0" layoutY="44.0" prefHeight="880.0" prefWidth="506.0" style="-fx-background-color: #218c74; -fx-background-radius: 15 0 0 15;" />
+            <Text fx:id="txtTimeNow" layoutX="21.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.69000244140625">
+               <font>
+                  <Font name="Poppins Regular" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="950.0" prefHeight="1000.0" prefWidth="950.0" style="-fx-background-color: #218c74;">
+         <children>
+            <AnchorPane layoutX="-793.0" layoutY="44.0" prefHeight="880.0" prefWidth="1690.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <Button fx:id="btnBack" layoutX="25.0" layoutY="815.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="53.0" prefWidth="252.0" style="-fx-background-color: #218c74; -fx-border-color: #218c74;" text="BACK" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="122.0" fitWidth="117.0" layoutX="1561.0" layoutY="6.0">
+                     <image>
+                        <Image url="@../assets/ranweli99-logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="txtPayment" layoutX="28.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAYMENTS" textAlignment="CENTER" wrappingWidth="281.3567199707031">
+                     <font>
+                        <Font size="47.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane fx:id="btnBooking" layoutX="1084.0" layoutY="132.0" onMouseClicked="#btnBookingOnAction" prefHeight="268.0" prefWidth="300.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Text fill="#218c74" layoutX="79.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONFIRM" textAlignment="CENTER" wrappingWidth="137.69000244140625">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="184.0" fitWidth="281.0" layoutX="10.0" layoutY="37.0">
+                           <image>
+                              <Image url="@../assets/icons/payment_confirmation.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="lblTime" layoutX="14.0" layoutY="602.0" prefHeight="19.0" prefWidth="114.0">
+                     <font>
+                        <Font name="Poppins Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="120.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Image:">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Text>
+                  <Text layoutX="122.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment ID">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Text>
+                  <Text layoutX="122.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Text>
+                  <Text layoutX="120.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Method">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Text>
+                  <ComboBox fx:id="cmbMethod" layoutX="311.0" layoutY="314.0" prefHeight="42.0" prefWidth="400.0" />
+                  <Text fx:id="txtAmount" layoutX="319.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="267.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtId" layoutX="319.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="267.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="121.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Text>
+                  <Text fx:id="txtDate" layoutX="317.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="267.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Line endX="98.0" endY="38.0" layoutX="836.0" layoutY="226.0" startX="-10.0" startY="-85.0" />
+                  <Line endX="88.7071533203125" endY="28.70709228515625" layoutX="846.0" layoutY="236.0" startX="-14.0" startY="154.0" />
+                  <AnchorPane fx:id="btnPrintDocs" layoutX="664.0" layoutY="526.0" onMouseClicked="#btnPrintDocsOnAction" prefHeight="268.0" prefWidth="300.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Text fill="#218c74" layoutX="79.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Print Receipt" textAlignment="CENTER" wrappingWidth="137.69000244140625">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="221.0" fitWidth="260.0" layoutX="24.0" layoutY="11.0">
+                           <image>
+                              <Image url="@../assets/icons/undraw_Receipt.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text layoutX="683.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get Documentation of your payment">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <ImageView fx:id="imgUpload" fitHeight="41.0" fitWidth="41.0" layoutX="530.0" layoutY="256.0" onMouseClicked="#imgUploadOnAction">
+                     <image>
+                        <Image url="@../assets/icons/upload_image.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="txtUploadImageState" fill="#218c74" layoutX="315.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload Payment Image">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

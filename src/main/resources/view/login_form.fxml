@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ranweli.controller.LoginFormController">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="1008.0" prefWidth="957.0" style="-fx-background-color: #f7f1e3;">
+         <children>
+            <AnchorPane layoutX="98.0" layoutY="42.0" prefHeight="903.0" prefWidth="859.0" style="-fx-background-color: #218c74; -fx-background-radius: 15 0 0 15;">
+               <children>
+                  <Text layoutX="32.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RANWELI_" wrappingWidth="411.69000244140625">
+                     <font>
+                        <Font size="75.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtSubText" layoutX="35.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover, Explore – Your Journey, Our Expertise" wrappingWidth="796.0">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnBack" layoutX="40.0" layoutY="35.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="51.0" prefWidth="211.0" style="-fx-background-color: #218c74; -fx-border-color: black;" text="GO BACK">
+                     <font>
+                        <Font name="Poppins Regular" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="950.0" prefHeight="1008.0" prefWidth="950.0" style="-fx-background-color: #218c74;">
+         <children>
+            <AnchorPane layoutY="43.0" prefHeight="903.0" prefWidth="873.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <Text layoutX="330.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" textAlignment="CENTER" wrappingWidth="195.69000244140625">
+                     <font>
+                        <Font size="44.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtUserName" layoutX="226.0" layoutY="340.0" prefHeight="36.0" prefWidth="423.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font></TextField>
+                  <Text layoutX="226.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User name">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Text>
+                  <Text layoutX="226.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Text>
+                  <Button fx:id="btnLogin" layoutX="250.0" layoutY="520.0" mnemonicParsing="false" onAction="#loginbtnOnAction" prefHeight="51.0" prefWidth="374.0" style="-fx-background-color: #218c74;" text="LOGIN" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="84.0" fitWidth="88.0" layoutX="384.0" layoutY="68.0">
+                     <image>
+                        <Image url="@../assets/ranweli99-logo.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="txtPassword" layoutX="226.0" layoutY="434.0" prefHeight="36.0" prefWidth="423.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font></PasswordField>
+                  <Text layoutX="246.0" layoutY="628.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Keep your login credentials confidential. Do not share your username or password with unauthorized individuals." textAlignment="CENTER" wrappingWidth="382.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
